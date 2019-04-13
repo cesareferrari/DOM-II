@@ -65,3 +65,9 @@ navLinks.forEach(link => {
   });
 })
 
+
+
+// Window resize
+window.addEventListener('resize', event => {
+  alert('You resized the window!');
+})
