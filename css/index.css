@@ -375,3 +375,14 @@ img {
 .alert.hidden {
   display: none;
 }
+.info-box {
+  background-color: #ccccff;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 1px solid #000099;
+  display: none;
+  position: absolute;
+}
+.info-box.visible {
+  display: block;
+}
