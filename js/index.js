@@ -71,3 +71,22 @@ navLinks.forEach(link => {
 window.addEventListener('resize', event => {
   alert('You resized the window!');
 })
+
+
+// Form events
+const submitButton = document.querySelector('input[type="submit"]');
+submitButton.addEventListener('click', event => {
+  event.preventDefault();
+})
+
+const formInputs = document.querySelectorAll('input[type="text"]');
+
+formInputs.forEach(input => {
+  input.addEventListener('focus', event => {
+    event.target.style.backgroundColor = 'yellow';
+  });
+
+  input.addEventListener('blur', event => {
+    event.target.style.backgroundColor = 'white';
+  }) 
+})

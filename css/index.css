@@ -394,3 +394,29 @@ img {
 .nav-link.active {
   border: 1px solid red;
 }
+form {
+  padding: 2rem 0;
+}
+form div {
+  margin-bottom: 2rem;
+}
+form div.row-centered {
+  text-align: center;
+}
+form label,
+form input[type="text"],
+form input[type="submit"] {
+  font-size: 1.8rem;
+}
+form input[type="text"] {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+}
+form label {
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+  font-style: italic;
+  padding-right: 2rem;
+}
