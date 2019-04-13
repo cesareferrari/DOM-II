@@ -91,3 +91,16 @@ formInputs.forEach(input => {
   }) 
 })
 
+
+
+// Prevent propagation
+const introImage = document.querySelector('.intro img');
+introImage.addEventListener('click', event => {
+  event.stopPropagation();
+  console.log('Image was clicked');
+})
+
+const introSection = document.querySelector('.intro');
+introSection.addEventListener('click', event => {
+  console.log('Intro section was clicked');
+})
