@@ -31,14 +31,28 @@ infoBox.classList.add('info-box');
 logo.append(infoBox);
 
 
-logo.addEventListener('mouseover', (event) => {
+logo.addEventListener('mouseenter', (event) => {
   infoBox.textContent = event.target.dataset.info;
   infoBox.classList.add('visible');
 })
 
-logo.addEventListener('mouseout', (event) => {
+logo.addEventListener('mouseleave', (event) => {
   infoBox.textContent = event.target.dataset.info;
   infoBox.classList.remove('visible');
 })
+
+
+
+// Button sign me up
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach((button) => {
+  button.addEventListener('dblclick', (event) => {
+    event.target.style.backgroundColor = 'black';
+  })
+})
+
+
+// Navigation mouseover
+
 
 
