@@ -386,3 +386,11 @@ img {
 .info-box.visible {
   display: block;
 }
+.nav-link {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.nav-link.active {
+  border: 1px solid red;
+}

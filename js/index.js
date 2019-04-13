@@ -53,6 +53,15 @@ buttons.forEach((button) => {
 
 
 // Navigation mouseover
+const navLinks = document.querySelectorAll('.nav-link');
 
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', event => {
+    event.target.classList.add('active');
+  });
 
+  link.addEventListener('mouseout', event => {
+    event.target.classList.remove('active');
+  });
+})
 
