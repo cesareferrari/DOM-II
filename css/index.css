@@ -350,3 +350,73 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.alert {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: red;
+  background-color: #ffff80;
+  font-size: 2.4rem;
+  border-bottom: 1px solid darkgray;
+}
+.alert .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.alert.hidden {
+  display: none;
+}
+.info-box {
+  background-color: #ccccff;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 1px solid #000099;
+  display: none;
+  position: absolute;
+}
+.info-box.visible {
+  display: block;
+}
+.nav-link {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.nav-link.active {
+  border: 1px solid red;
+}
+form {
+  padding: 2rem 0;
+}
+form div {
+  margin-bottom: 2rem;
+}
+form div.row-centered {
+  text-align: center;
+}
+form label,
+form input[type="text"],
+form input[type="submit"] {
+  font-size: 1.8rem;
+}
+form input[type="text"] {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+}
+form label {
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+  font-style: italic;
+  padding-right: 2rem;
+}

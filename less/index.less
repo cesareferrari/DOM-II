@@ -12,3 +12,89 @@
 
 // Page Specific
 @import 'home-page.less';
+
+
+.alert {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: red;
+  background-color: lighten(yellow, 25%);
+  font-size: 2.4rem;
+  border-bottom: 1px solid darkgray;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.info-box {
+  background-color: lighten(blue, 40%);
+  font-size: 1.6rem;
+  padding: 2.0rem;
+  border: 1px solid darken(blue, 20%);
+  display: none;
+  position: absolute;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.nav-link {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+
+  &.active {
+    border: 1px solid red;
+  }
+}
+
+
+
+form {
+  padding: 2rem 0;
+
+  div {
+    margin-bottom: 2rem;
+
+    &.row-centered {
+      text-align: center;
+    }
+  }
+
+  label,
+  input[type="text"],
+  input[type="submit"] {
+    font-size: 1.8rem;
+  }
+
+  input[type="text"] {
+    padding: .8rem;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+  }
+
+  label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    font-style: italic;
+    padding-right: 2rem;
+  }
+}
